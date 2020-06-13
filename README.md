@@ -4,7 +4,7 @@
 
 ## class 15
 - [github action](https://github.com/sondos-401-advanced-javascript/auth-server/actions)
-
+- [heroku](https://auths-api.herokuapp.com/)
 ### test
 by using `npm test` and `npm run lint`
 
