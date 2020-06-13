@@ -8,7 +8,7 @@ const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
 const tokenUrl = 'https://github.com/login/oauth/access_token';
 const apiUrl = 'https://api.github.com/user';
-const redirectUrl = 'http://localhost:3000/oauth';
+const redirectUrl = 'https://auths-api.herokuapp.com/oauth';
 
 
 async function oauth(req,res,next){
