@@ -10,7 +10,7 @@ route.post('/v1/signup',signUp);
 route.post('/v1/signin',basicAuth,signIn);
 route.get('/users',allUsers);
 
-route.get('/v1/oauth',OAuthMiddleware,signInGitHub);
+route.get('/oauth',OAuthMiddleware,signInGitHub);
 
 // for signUp
 function signUp(req,res,next){

@@ -12,7 +12,7 @@ by using `npm test` and `npm run lint`
 - /v1/signin 
 - /v1/signup
 - /users
-- /v1/oauth
+- /oauth
 - /v1/secret
 - v1/categories, v1/products >>get to read [admin, writer, regular, editor]
 - v1/categories/:id, v1/products/:id >>get to read one [admin, writer, regular, editor]
