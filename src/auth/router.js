@@ -11,7 +11,11 @@ route.post('/v1/signin',basicAuth,signIn);
 route.get('/users',allUsers);
 
 route.get('/oauth',OAuthMiddleware,signInGitHub);
-
+/**
+ * 
+ * @param {Object} req it has new user in body
+ * @param {String} res token
+ */
 // for signUp
 function signUp(req,res,next){
   let newUser = req.body;
@@ -38,7 +42,10 @@ function signIn(req,res,next){
   });
   res.status(200).send({  token: req.token });
 }
-
+/**
+ * 
+ * @param {Array} res array of objects 
+ */
 // get all users
 function allUsers(req,res,next){
   userModel.allUsers()

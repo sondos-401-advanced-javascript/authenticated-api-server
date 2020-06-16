@@ -7,7 +7,6 @@ const extraRoute = require('./auth/extra-routes');
 const errorHandler = require('../src/middleware/500');
 const notFound = require('../src/middleware/404');
 const morgan = require('morgan');
-// const generalRouter = require('../routes/api');
 const server = express();
 server.use(express.json());
 
@@ -21,7 +20,7 @@ server.use(morgan('dev'));
 // }));
 server.use(route);
 server.use('/v1',extraRoute);
-// server.use(generalRouter);
+
 
 server.use('*',notFound);
 server.use(errorHandler);
